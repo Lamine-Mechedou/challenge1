@@ -1,34 +1,51 @@
-.content{
-
+body{
     background: rgb(206, 229, 238);
-    width: 70vw;
-
-
+   
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: large;
+   
+    
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
 }
 
+.content{
+    width: 70%;
+}
+
+
 .sidebar{
-    background: rgb(236, 192, 47);
+    background: rgb(238, 216, 143);
     width: 30%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
-
-    
-  
+   
+    margin: 10px;  
+   
 }
 
 .itemsidebar{
-   border: 2px solid rgb(241, 141, 141);
+   border: 2px solid rgb(240, 76, 76);
    margin: 10px;
-
+   padding: 10px;
+  
 }
 
 .img-principle{
     width:20vw;
     height: 300px;
-   
+    flex-direction: column;
+    float: right;
+    margin: 15px;
 }
 
+.img-principle:hover{
+   
+    width:30vw ;
+}
 
 
 .container-image{
@@ -36,16 +53,39 @@
        flex-wrap: wrap;
        padding: 5px;
        height: 100px;
+       justify-content: center;;
+       flex-direction:row;
        
-       flex-direction: row;
-
 }
 
 
 
-.img1{
+.container-image > img{
     width: 300px;
     height:200px;
-    margin: 5px;
-    
+    margin: 5px;   
 }
+.container-image > img:hover{
+    animation-name:small-to-big;
+    animation-duration: 2s;
+}
+
+
+
+@keyframes small-to-big{
+           0%{width: 400px;
+            height: 300px;
+            margin: 7px;}
+            100%{width: 400px;
+                height: 300px;
+                margin: 10px;}
+}
+
+a{
+    color:blue;
+}
+
+a:hover{
+    color: green;
+}
+
