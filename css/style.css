@@ -1,0 +1,51 @@
+.content{
+
+    background: rgb(206, 229, 238);
+    width: 70vw;
+
+
+}
+
+.sidebar{
+    background: rgb(236, 192, 47);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    
+  
+}
+
+.itemsidebar{
+   border: 2px solid rgb(241, 141, 141);
+   margin: 10px;
+
+}
+
+.img-principle{
+    width:20vw;
+    height: 300px;
+   
+}
+
+
+
+.container-image{
+       display: flex;
+       flex-wrap: wrap;
+       padding: 5px;
+       height: 100px;
+       
+       flex-direction: row;
+
+}
+
+
+
+.img1{
+    width: 300px;
+    height:200px;
+    margin: 5px;
+    
+}
